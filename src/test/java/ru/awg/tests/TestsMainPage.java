@@ -5,6 +5,7 @@ import io.qameta.allure.Description;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import ru.awg.helpers.DriverSettings;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
@@ -13,7 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static com.codeborne.selenide.Selenide.$;
 
 
-public class TestsMainPage  {
+public class TestsMainPage extends DriverSettings {
     @BeforeAll
     static void setStartConfig() {
         Configuration.startMaximized = true;
