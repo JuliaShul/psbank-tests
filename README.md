@@ -48,7 +48,7 @@ IntelliJ IDEA, Java, Gradle, JUnit5, Rest-Assured, Selenide, Jenkins, Selenoid, 
 
 :heavy_check_mark: - Проверка категорий на главной странице
 
-## Default settings used [for Jenkins startup](https://jenkins.autotests.cloud/job/reports_psb_tests/) <a href="https://www.jenkins.io/"><img src="./images/Jenkins.svg" width="40" height="40"  alt="Jenkins"/></a>
+## Default settings used [for Jenkins startup](https://jenkins.autotests.cloud/job/reports_psb_tests/) <a href="https://www.jenkins.io/"><img src="src/test/resources/files/Jenkins.jpg" width="40" height="40"  alt="Jenkins"/></a>
 
 ### Specifying parameters for running tests
 * BROWSER (default chrome)
@@ -57,9 +57,6 @@ IntelliJ IDEA, Java, Gradle, JUnit5, Rest-Assured, Selenide, Jenkins, Selenoid, 
 * BROWSER_MOBILE
 * REMOTE_DRIVER_URL (url address from selenoid or grid. default selenoid.autotests.cloud)
 * ALLURE_NOTIFICATIONS_VERSION (default 3.1.1)
-
-![Jenkins](src/test/resources/files/Jenkins.jpg)
-<br><br>
 
 ### Run tests with not filled local.properties:
 
