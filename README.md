@@ -76,8 +76,8 @@ allure serve build/allure-results
 <!-- ### List of tests in Allure TestOps
 ![alt "Allure TestOps"](src/test/resources/files/ListOfTestsInAllureTestOps.png "Allure TestOps") -->
 
-### Analysis of results in Jenkins via Allure Reports<a href="https://qameta.io/"><img src="https://starchenkov.pro/qa-guru/img/skills/Allure_EE.svg" width="40" height="40"></a>
-![Allure_MainDashboard](src/test/resources/files/Allure_dashboars1.jpg)
+### Analysis of results in Jenkins via Allure Reports
+![Allure_MainDashboard](src/test/resources/files/Allure_dashboards1.png)
 <br><br>
 
 <!-- ## Analysis of results in Allure TestOps <a href="https://qameta.io/"><img src="https://starchenkov.pro/qa-guru/img/skills/Allure_EE.svg" width="40" height="40"></a>
@@ -94,6 +94,6 @@ allure serve build/allure-results
 ![Allure_Telega2](src/test/resources/files/Notifications.jpg)
 
 ## Video of the test run, taken from the Selenoid runtime environment <a href="https://aerokube.com/selenoid/"><img src="https://starchenkov.pro/qa-guru/img/skills/Telegram.svg" width="40" height="40"></a>
-![Selenoid](src/test/resources/files/test_run.mp4)
+![Selenoid](src/test/resources/files/test_run.gif)
 <br><br>
 
