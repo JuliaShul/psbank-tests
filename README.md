@@ -48,7 +48,7 @@ IntelliJ IDEA, Java, Gradle, JUnit5, Rest-Assured, Selenide, Jenkins, Selenoid, 
 
 :heavy_check_mark: - Проверка категорий на главной странице
 
-## Default settings used [for Jenkins startup](https://jenkins.autotests.cloud/job/reports_psb_tests/) <a href="https://www.jenkins.io/"><img src="src/test/resources/files/Jenkins.jpg" width="40" height="40"  alt="Jenkins"/></a>
+## Default settings used [for Jenkins startup](https://jenkins.autotests.cloud/job/reports_psb_tests/) <a href="https://www.jenkins.io/"><img src="https://starchenkov.pro/qa-guru/img/skills/Jenkins.svg" width="40" height="40"  alt="Jenkins"/></a>
 
 ### Specifying parameters for running tests
 * BROWSER (default chrome)
@@ -57,6 +57,9 @@ IntelliJ IDEA, Java, Gradle, JUnit5, Rest-Assured, Selenide, Jenkins, Selenoid, 
 * BROWSER_MOBILE
 * REMOTE_DRIVER_URL (url address from selenoid or grid. default selenoid.autotests.cloud)
 * ALLURE_NOTIFICATIONS_VERSION (default 3.1.1)
+* 
+![Jenkins](src/test/resources/files/Jenkins.jpg)
+<br><br>
 
 ### Run tests with not filled local.properties:
 
@@ -73,24 +76,24 @@ allure serve build/allure-results
 <!-- ### List of tests in Allure TestOps
 ![alt "Allure TestOps"](src/test/resources/files/ListOfTestsInAllureTestOps.png "Allure TestOps") -->
 
-### Analysis of results in Jenkins via Allure Reports<a href="https://qameta.io/"><img src="images/jenkins_allure.svg" width="40" height="40"></a>
+### Analysis of results in Jenkins via Allure Reports<a href="https://qameta.io/"><img src="https://starchenkov.pro/qa-guru/img/skills/Allure_EE.svg" width="40" height="40"></a>
 ![Allure_MainDashboard](src/test/resources/files/Allure_dashboars1.jpg)
 <br><br>
 
-<!-- ## Analysis of results in Allure TestOps <a href="https://qameta.io/"><img src="images/Allure_EE.svg" width="40" height="40"></a>
+<!-- ## Analysis of results in Allure TestOps <a href="https://qameta.io/"><img src="https://starchenkov.pro/qa-guru/img/skills/Allure_EE.svg" width="40" height="40"></a>
 ![alt "Allure TestOps"](src/test/resources/files/images/allure1.png "Allure TestOps") -->
 
 
 
 --------------------------------------------------------------------------
 
-## Notification of test results via a bot on Telegram <a href="https://telegram.org/"> <img src="images/telegram2.svg" width="40" height="40"></a>
+## Notification of test results via a bot on Telegram <a href="https://telegram.org/"> <img src="https://starchenkov.pro/qa-guru/img/skills/Telegram.svg" width="40" height="40"></a>
 ![Allure_Telega](src/test/resources/files/Notifications.gif)
 
 ### Пример нотификации с результатом прохождения тестов
 ![Allure_Telega2](src/test/resources/files/Notifications.jpg)
 
-## Video of the test run, taken from the Selenoid runtime environment <a href="https://aerokube.com/selenoid/"><img src="images/Selenoid.svg" width="40" height="40"></a>
+## Video of the test run, taken from the Selenoid runtime environment <a href="https://aerokube.com/selenoid/"><img src="https://starchenkov.pro/qa-guru/img/skills/Telegram.svg" width="40" height="40"></a>
 ## Видео прохождения одного из тестов
 ![Selenoid](src/test/resources/files/test_run.gif)
 <br><br>
