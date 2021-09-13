@@ -41,7 +41,7 @@
 IntelliJ IDEA, Java, Gradle, JUnit5, Rest-Assured, Selenide, Jenkins, Selenoid, Github, Allure TestOps, Jira, Telegram (notifications)
 <br><br>
 
-## Были реализованы следующие проверки:
+## Checks in projects:
 ### UI:
 
 :heavy_check_mark: - Проверка разделов на главной странице
@@ -57,7 +57,7 @@ IntelliJ IDEA, Java, Gradle, JUnit5, Rest-Assured, Selenide, Jenkins, Selenoid, 
 * BROWSER_MOBILE
 * REMOTE_DRIVER_URL (url address from selenoid or grid. default selenoid.autotests.cloud)
 * ALLURE_NOTIFICATIONS_VERSION (default 3.1.1)
-* 
+
 ![Jenkins](src/test/resources/files/Jenkins.jpg)
 <br><br>
 
