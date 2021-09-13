@@ -3,6 +3,7 @@ package ru.psb.simpletests;
 import com.codeborne.selenide.Configuration;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.*;
+import ru.psb.helpers.DriverUtils;
 import ru.psb.obj.SearchFields;
 import ru.psb.config.Project;
 import ru.psb.helpers.CommonSteps;
@@ -34,7 +35,6 @@ public class TestsMainPage extends TestBase {
         searchFields.haveTextChapter(2,"Среднему бизнесу");
         searchFields.haveTextChapter(3,"Корпорациям");
         searchFields.haveTextChapter(4,"Гособоронзаказ");
-//       searchFields.haveTextChapter(5,"Банкам");
         searchFields.haveTextCategory(0,"Кредиты");
         searchFields.haveTextCategory(1,"Вклады и накопления");
         searchFields.haveTextCategory(2,"Ипотека");
