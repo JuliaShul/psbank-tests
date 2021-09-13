@@ -1,4 +1,4 @@
-# Автотесты на https://www.psbank.ru/
+# Autotests for https://www.psbank.ru/
 
 ## Technology Stack
 <a href="https://www.jetbrains.com/idea/">
@@ -41,45 +41,59 @@
 IntelliJ IDEA, Java, Gradle, JUnit5, Rest-Assured, Selenide, Jenkins, Selenoid, Github, Allure TestOps, Jira, Telegram (notifications)
 <br><br>
 
-## Были реализованы следующие проверки:
+## Checks in projects:
 ### UI:
-
-:heavy_check_mark: - Проверка заголовка на главной странице
 
 :heavy_check_mark: - Проверка разделов на главной странице
 
 :heavy_check_mark: - Проверка категорий на главной странице
 
-:heavy_check_mark: - Проверка автоматически выбранного региона на главной странице
+## Default settings used [for Jenkins startup](https://jenkins.autotests.cloud/job/reports_psb_tests/) <a href="https://www.jenkins.io/"><img src="https://starchenkov.pro/qa-guru/img/skills/Jenkins.svg" width="40" height="40"  alt="Jenkins"/></a>
 
+### Specifying parameters for running tests
+* BROWSER (default chrome)
+* BROWSER_VERSION (default 91.0)
+* BROWSER_SIZE (default 1920x1080)
+* BROWSER_MOBILE
+* REMOTE_DRIVER_URL (url address from selenoid or grid. default selenoid.autotests.cloud)
+* ALLURE_NOTIFICATIONS_VERSION (default 3.1.1)
 
-<br><br>
-## Команды для запуска тестов из терминала
-Для локального запуска тестов необходимо задать параметры в `local.driver.properies`
-```
-gradle clean test
-```
-
-<br><br>
-## Видео прохождения одного из тестов
-![Selenoid](src/test/resources/files/test_run.gif)
-<br><br>
-
-## В качестве CI системы был использован Jenkins
-[Ссылка на джобу в Jenkins](https://jenkins.autotests.cloud/job/reports_for_psbank/)
-
-### Указание параметров для запуска тестов
 ![Jenkins](src/test/resources/files/Jenkins.jpg)
 <br><br>
 
-## В качестве системы Тест Менеджмента был использован Allure TestOps
-### Основной дашборд для отслеживания
+### Run tests with not filled local.properties:
+
+```bash
+gradle clean test -Dbrowser=chrome -DbrowserVersion=91.0 -DbrowserSize=1920x1080 -DbrowserMobileView= -DremoteDriverUrl=https://user1:1234@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/
+```
+### Serve allure report:
+
+```bash
+allure serve build/allure-results
+```
+
+## Test Management system was used Allure 
+<!-- ### List of tests in Allure TestOps
+![alt "Allure TestOps"](src/test/resources/files/ListOfTestsInAllureTestOps.png "Allure TestOps") -->
+
+### Analysis of results in Jenkins via Allure Reports<a href="https://qameta.io/"><img src="https://starchenkov.pro/qa-guru/img/skills/Allure_EE.svg" width="40" height="40"></a>
 ![Allure_MainDashboard](src/test/resources/files/Allure_dashboars1.jpg)
 <br><br>
 
-## Для отправки нотификаций был выбран Telegram
+<!-- ## Analysis of results in Allure TestOps <a href="https://qameta.io/"><img src="https://starchenkov.pro/qa-guru/img/skills/Allure_EE.svg" width="40" height="40"></a>
+![alt "Allure TestOps"](src/test/resources/files/images/allure1.png "Allure TestOps") -->
+
+
+
+--------------------------------------------------------------------------
+
+## Notification of test results via a bot on Telegram <a href="https://telegram.org/"> <img src="https://starchenkov.pro/qa-guru/img/skills/Telegram.svg" width="40" height="40"></a>
 ![Allure_Telega](src/test/resources/files/Notifications.gif)
 
 ### Пример нотификации с результатом прохождения тестов
 ![Allure_Telega2](src/test/resources/files/Notifications.jpg)
+
+## Video of the test run, taken from the Selenoid runtime environment <a href="https://aerokube.com/selenoid/"><img src="https://starchenkov.pro/qa-guru/img/skills/Telegram.svg" width="40" height="40"></a>
+![Selenoid](src/test/resources/files/test_run.gif)
+<br><br>
 
