@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 
 //@Layer("Web")
 //@Owner("shulbaeva")
-public class TestsMainPage {
+public class TestsMainPage extends TestBase {
     SearchFields searchFields = new SearchFields();
     CommonSteps commonSteps = new CommonSteps();
 
