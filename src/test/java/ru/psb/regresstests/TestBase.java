@@ -1,4 +1,4 @@
-package ru.psb.simpletests;
+package ru.psb.regresstests;
 
 import ru.psb.config.Project;
 import ru.psb.helpers.AllureAttachments;

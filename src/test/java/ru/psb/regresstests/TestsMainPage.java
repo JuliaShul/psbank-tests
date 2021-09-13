@@ -1,9 +1,8 @@
-package ru.psb.simpletests;
+package ru.psb.regresstests;
 
 import com.codeborne.selenide.Configuration;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.*;
-import ru.psb.helpers.DriverUtils;
 import ru.psb.obj.SearchFields;
 import ru.psb.config.Project;
 import ru.psb.helpers.CommonSteps;
