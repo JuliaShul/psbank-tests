@@ -56,7 +56,6 @@ IntelliJ IDEA, Java, Gradle, JUnit5, Rest-Assured, Selenide, Jenkins, Selenoid, 
 * BROWSER_SIZE (default 1920x1080)
 * BROWSER_MOBILE
 * REMOTE_DRIVER_URL (url address from selenoid or grid. default selenoid.autotests.cloud)
-* THREADS (number of threads to run. default 1)
 * ALLURE_NOTIFICATIONS_VERSION (default 3.1.1)
 
 ![Jenkins](src/test/resources/files/Jenkins.jpg)
