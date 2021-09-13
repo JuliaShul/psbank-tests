@@ -1,9 +1,9 @@
-package ru.awg.tests;
+package ru.psb.simpletests;
 
-import ru.awg.config.Project;
-import ru.awg.helpers.AllureAttachments;
-import ru.awg.helpers.DriverSettings;
-import ru.awg.helpers.DriverUtils;
+import ru.psb.config.Project;
+import ru.psb.helpers.AllureAttachments;
+import ru.psb.helpers.DriverSettings;
+import ru.psb.helpers.DriverUtils;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.junit5.AllureJunit5;
@@ -24,14 +24,10 @@ public class TestBase {
     @AfterEach
     public void addAttachments() {
         String sessionId = DriverUtils.getSessionId();
-
         AllureAttachments.addScreenshotAs("Last screenshot");
         AllureAttachments.addPageSource();
-//        AllureAttachments.attachNetwork(); // todo
         AllureAttachments.addBrowserConsoleLogs();
-
         Selenide.closeWebDriver();
-
         if (Project.isVideoOn()) {
             AllureAttachments.addVideo(sessionId);
         }

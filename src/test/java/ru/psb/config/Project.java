@@ -1,4 +1,4 @@
-package ru.awg.config;
+package ru.psb.config;
 
 import org.aeonbits.owner.ConfigFactory;
 

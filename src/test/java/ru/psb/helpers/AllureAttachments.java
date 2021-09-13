@@ -1,4 +1,4 @@
-package ru.awg.helpers;
+package ru.psb.helpers;
 
 import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
@@ -44,7 +44,7 @@ public class AllureAttachments {
                 } catch (FileNotFoundException e) {
                     sleep(1000);
                 } catch (IOException e) {
-                    Logging.LOGGER.warn("[ALLURE VIDEO ATTACHMENT ERROR] Cant attach allure video, {}", videoUrl);
+                    DriverUtils.LOGGER.warn("[ALLURE VIDEO ATTACHMENT ERROR] Cant attach allure video, {}", videoUrl);
                     e.printStackTrace();
                 }
             }

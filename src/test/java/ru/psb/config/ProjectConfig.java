@@ -1,4 +1,4 @@
-package ru.awg.config;
+package ru.psb.config;
 
 import org.aeonbits.owner.Config;
 
@@ -17,6 +17,10 @@ public interface ProjectConfig extends Config {
     @DefaultValue("91.0")
     @Key("browserVersion")
     String browserVersion();
+
+    @DefaultValue("https://www.psbank.ru/")
+    @Key("baseUrl")
+    String baseUrl();
 
     @DefaultValue("1920x1080")
     @Key("browserSize")
