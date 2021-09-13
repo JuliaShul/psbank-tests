@@ -94,6 +94,6 @@ allure serve build/allure-results
 ![Allure_Telega2](src/test/resources/files/Notifications.jpg)
 
 ## Video of the test run, taken from the Selenoid runtime environment <a href="https://aerokube.com/selenoid/"><img src="https://starchenkov.pro/qa-guru/img/skills/Telegram.svg" width="40" height="40"></a>
-![Selenoid](src/test/resources/files/test_run.gif)
+![Selenoid](src/test/resources/files/test_run.mp4)
 <br><br>
 
