@@ -76,8 +76,8 @@ allure serve build/allure-results
 <!-- ### List of tests in Allure TestOps
 ![alt "Allure TestOps"](src/test/resources/files/ListOfTestsInAllureTestOps.png "Allure TestOps") -->
 
-### Analysis of results in Jenkins via Allure Reports<a href="https://qameta.io/"><img src="https://starchenkov.pro/qa-guru/img/skills/Allure_EE.svg" width="40" height="40"></a>
-![Allure_MainDashboard](src/test/resources/files/Allure_dashboars1.jpg)
+### Analysis of results in Jenkins via Allure Reports
+![Allure_MainDashboard](src/test/resources/files/Allure_dashboards1.jpg)
 <br><br>
 
 <!-- ## Analysis of results in Allure TestOps <a href="https://qameta.io/"><img src="https://starchenkov.pro/qa-guru/img/skills/Allure_EE.svg" width="40" height="40"></a>
