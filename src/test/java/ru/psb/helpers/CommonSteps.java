@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class CommonSteps {
     @Step("Open page {url}")
-    public void openPage(String url) {
+    public void openPage() {
         open("https://www.psbank.ru/");
     }
 }

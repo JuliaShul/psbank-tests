@@ -27,7 +27,7 @@ public class TestsMainPage extends TestBase {
     @DisplayName("Check the labels on the top panel on the site")
     @Test
     public void checkTopBar() {
-        commonSteps.openPage("");
+        commonSteps.openPage();
         searchFields.haveText("Офисы");
         searchFields.haveText("Банкоматы");
         searchFields.haveText("Контакты");
