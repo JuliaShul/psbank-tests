@@ -18,7 +18,7 @@ import static io.qameta.allure.Allure.step;
 
 //@Owner("mhilimovich")
 //@Feature("Main page")
-public class MainPageTests extends DriverUtils {
+public class MainPageTests extends TestBase {
     String mainPageURL = "https://www.profitero.com/";
 
     @Test

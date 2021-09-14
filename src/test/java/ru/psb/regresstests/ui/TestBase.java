@@ -11,24 +11,23 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.extension.ExtendWith;
 
+import static ru.psb.helpers.DriverUtils.configureDriver;
+
 
 @ExtendWith({AllureJunit5.class})
 public class TestBase {
     @BeforeAll
     static void setUp() {
-        DriverUtils.configureDriver();
+        configureDriver();
     }
 
     @AfterEach
     public void addAttachments() {
-        String sessionId = DriverUtils.getSessionId();
         AllureAttachments.attachScreenshot("Last screenshot");
         AllureAttachments.attachPageSource();
         AllureAttachments.addBrowserConsoleLogs();
-        AllureAttachments.browserConsoleLogs();
+        if (System.getProperty("video.storage") != null)
+            AllureAttachments.attachVideo();
         Selenide.closeWebDriver();
-        if (DriverUtils.isVideoOn()) {
-            AllureAttachments.attachVideo(sessionId);
-        }
     }
 }

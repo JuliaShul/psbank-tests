@@ -5,6 +5,7 @@ import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -43,7 +44,7 @@ public class AllureAttachments {
         return getWebDriver().getPageSource().getBytes(StandardCharsets.UTF_8);
     }
 
-    public static void attachVideo( String sessionId ) {
+    public static void attachVideo() {
         URL videoUrl = getVideoUrl(sessionId);
         if (videoUrl != null) {
             InputStream videoInputStream = null;
@@ -62,6 +63,9 @@ public class AllureAttachments {
             }
             addAttachment("Video", "video/mp4", videoInputStream, "mp4");
         }
+    }
+    public static String getSessionId() {
+        return ((RemoteWebDriver) getWebDriver()).getSessionId().toString();
     }
 
     public static URL getVideoUrl( String sessionId ) {
