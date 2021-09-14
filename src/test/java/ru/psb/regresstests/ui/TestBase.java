@@ -18,6 +18,7 @@ import static ru.psb.helpers.DriverUtils.configureDriver;
 public class TestBase {
     @BeforeAll
     static void setUp() {
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         configureDriver();
     }
 
