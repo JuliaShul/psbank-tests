@@ -76,13 +76,13 @@ public class DriverUtils {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
-        if (isWebMobile()) { // for chrome only
-            ChromeOptions chromeOptions = new ChromeOptions();
-            Map<String, Object> mobileDevice = new HashMap<>();
-            mobileDevice.put("deviceName", getWebMobile());
-            chromeOptions.setExperimentalOption("mobileEmulation", mobileDevice);
-            capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-        }
+//        if (isWebMobile()) { // for chrome only
+//            ChromeOptions chromeOptions = new ChromeOptions();
+//            Map<String, Object> mobileDevice = new HashMap<>();
+//            mobileDevice.put("deviceName", getWebMobile());
+//            chromeOptions.setExperimentalOption("mobileEmulation", mobileDevice);
+//            capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
+//        }
 
         if (isRemoteWebDriver()) {
             capabilities.setCapability("enableVNC", true);
