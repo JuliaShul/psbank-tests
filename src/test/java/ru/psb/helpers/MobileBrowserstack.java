@@ -2,7 +2,6 @@ package ru.psb.helpers;
 
 
 import ru.psb.config.MobileProjectConfig;
-import ru.psb.config.Project;
 
 import java.net.MalformedURLException;
 import java.net.URL;

@@ -1,14 +1,9 @@
 package ru.psb.regresstests.ui;
 
-import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.*;
-import ru.psb.config.ProjectConfig;
-import ru.psb.helpers.DriverUtils;
 import ru.psb.obj.SearchFields;
-import ru.psb.config.Project;
-import ru.psb.helpers.CommonSteps;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.open;
@@ -21,11 +16,6 @@ public class TestsMainPage extends TestBase {
  //   CommonSteps commonSteps = new CommonSteps();
 
     String mainPageURL = "https://www.psbank.ru/";
-
-//    @BeforeAll
-//    static void configureBaseUrl() {
-//        Configuration.baseUrl = DriverUtils.getDriverConfig.baseUrl();
-//    }
 
    @Story("Positive test for Search Fields on TopBar")
  //   @JiraIssues({@JiraIssue("HOM-231")})

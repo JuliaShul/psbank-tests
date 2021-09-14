@@ -1,6 +1,5 @@
 package ru.psb.regresstests.ui;
 
-import ru.psb.config.Project;
 import ru.psb.helpers.AllureAttachments;
 import ru.psb.helpers.DriverUtils;
 import com.codeborne.selenide.Selenide;
@@ -24,11 +23,13 @@ public class TestBase {
 
     @AfterEach
     public void addAttachments() {
+        String sessionId = DriverUtils.getSessionId();
         AllureAttachments.attachScreenshot("Last screenshot");
         AllureAttachments.attachPageSource();
         AllureAttachments.addBrowserConsoleLogs();
-        if (System.getProperty("video.storage") != null)
-            AllureAttachments.attachVideo();
+        if (DriverUtils.isVideoOn()) {
+            AllureAttachments.attachVideo(sessionId);
+        }
         Selenide.closeWebDriver();
     }
 }

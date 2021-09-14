@@ -44,7 +44,7 @@ public class AllureAttachments {
         return getWebDriver().getPageSource().getBytes(StandardCharsets.UTF_8);
     }
 
-    public static void attachVideo() {
+    public static void attachVideo(String sessionId) {
         URL videoUrl = getVideoUrl(sessionId);
         if (videoUrl != null) {
             InputStream videoInputStream = null;
