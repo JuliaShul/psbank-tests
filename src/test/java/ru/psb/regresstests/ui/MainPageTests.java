@@ -8,6 +8,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
+import ru.psb.helpers.DriverUtils;
 
 import static com.codeborne.selenide.Condition.attribute;
 import static com.codeborne.selenide.Condition.text;
@@ -17,7 +18,7 @@ import static io.qameta.allure.Allure.step;
 
 //@Owner("mhilimovich")
 //@Feature("Main page")
-public class MainPageTests extends TestBase {
+public class MainPageTests extends DriverUtils {
     String mainPageURL = "https://www.profitero.com/";
 
     @Test
