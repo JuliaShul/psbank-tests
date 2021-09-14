@@ -5,23 +5,20 @@ import org.aeonbits.owner.Config;
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
         "system:properties",
-        "classpath:config/remote.properties"
+        "classpath:config/local_driver.properties",
+        "classpath:config/remote_driver.properties"
 })
 public interface ProjectConfig extends Config {
 
-    @DefaultValue("chrome")
+//    @DefaultValue("chrome")
     @Key("browser")
     String browser();
 
-    @DefaultValue("91.0")
+//    @DefaultValue("91.0")
     @Key("browserVersion")
     String browserVersion();
 
-    @DefaultValue("https://www.psbank.ru/")
-    @Key("baseUrl")
-    String baseUrl();
-
-    @DefaultValue("1920x1080")
+//    @DefaultValue("1920x1080")
     @Key("browserSize")
     String browserSize();
 
@@ -30,4 +27,13 @@ public interface ProjectConfig extends Config {
 
     @Key("videoStorage")
     String videoStorage();
+
+    @Key("browserMobileView")
+    String webBrowserMobileView();
+
+    @Key("web.remote.driver.user")
+    String webRemoteDriverUser();
+
+    @Key("web.remote.driver.password")
+    String webRemoteDriverPassword();
 }

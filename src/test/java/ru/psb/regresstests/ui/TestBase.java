@@ -1,8 +1,7 @@
-package ru.psb.regresstests;
+package ru.psb.regresstests.ui;
 
 import ru.psb.config.Project;
 import ru.psb.helpers.AllureAttachments;
-import ru.psb.helpers.DriverSettings;
 import ru.psb.helpers.DriverUtils;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
@@ -17,19 +16,18 @@ import org.junit.jupiter.api.extension.ExtendWith;
 public class TestBase {
     @BeforeAll
     static void setUp() {
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-        DriverSettings.configure();
+        DriverUtils.configureDriver();
     }
 
     @AfterEach
     public void addAttachments() {
         String sessionId = DriverUtils.getSessionId();
-        AllureAttachments.addScreenshotAs("Last screenshot");
-        AllureAttachments.addPageSource();
+        AllureAttachments.attachScreenshot("Last screenshot");
+        AllureAttachments.attachPageSource();
         AllureAttachments.addBrowserConsoleLogs();
         Selenide.closeWebDriver();
-        if (Project.isVideoOn()) {
-            AllureAttachments.addVideo(sessionId);
+        if (DriverUtils.isVideoOn()) {
+            AllureAttachments.attachVideo(sessionId);
         }
     }
 }
