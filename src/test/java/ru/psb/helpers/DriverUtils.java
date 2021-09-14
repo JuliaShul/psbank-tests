@@ -32,13 +32,13 @@ public class DriverUtils {
         return ConfigFactory.newInstance().create(ProjectConfig.class, System.getProperties());
     }
 
-    public static String getWebMobile() {
-        return getDriverConfig().webBrowserMobileView();
-    }
-
-    public static boolean isWebMobile() {
-        return !getWebMobile().equals("");
-    }
+//    public static String getWebMobile() {
+//        return getDriverConfig().webBrowserMobileView();
+//    }
+//
+//    public static boolean isWebMobile() {
+//        return !getWebMobile().equals("");
+//    }
 
 
     public static String getWebRemoteDriver() {

@@ -1,5 +1,6 @@
 package ru.psb.helpers;
 
+import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
@@ -17,30 +18,32 @@ import java.nio.charset.StandardCharsets;
 import static com.codeborne.selenide.Selenide.sleep;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static io.qameta.allure.Allure.addAttachment;
+import static io.restassured.RestAssured.sessionId;
+import static org.openqa.selenium.logging.LogType.BROWSER;
 
 public class AllureAttachments {
     private static final Logger LOG = LoggerFactory.getLogger(AllureAttachments.class);
 
     @Attachment(value = "{attachName}", type = "text/plain")
-    private static String addMessage(String attachName, String text) {
+    private static String addMessage( String attachName, String text ) {
         return text;
     }
 
-    public static void addBrowserConsoleLogs() {
+    public static void addBrowserConsoleLogs( ) {
         addMessage("Browser console logs", DriverUtils.getConsoleLogs());
     }
 
     @Attachment(value = "{attachName}", type = "image/png")
-    public static byte[] attachScreenshot(String attachName) {
+    public static byte[] attachScreenshot( String attachName ) {
         return ((TakesScreenshot) getWebDriver()).getScreenshotAs(OutputType.BYTES);
     }
 
     @Attachment(value = "Page source", type = "text/html")
-    public static byte[] attachPageSource() {
+    public static byte[] attachPageSource( ) {
         return getWebDriver().getPageSource().getBytes(StandardCharsets.UTF_8);
     }
 
-    public static void attachVideo(String sessionId) {
+    public static void attachVideo( String sessionId ) {
         URL videoUrl = getVideoUrl(sessionId);
         if (videoUrl != null) {
             InputStream videoInputStream = null;
@@ -61,7 +64,7 @@ public class AllureAttachments {
         }
     }
 
-    public static URL getVideoUrl(String sessionId) {
+    public static URL getVideoUrl( String sessionId ) {
         String videoUrl = DriverUtils.getVideoUrl() + sessionId + ".mp4";
         try {
             return new URL(videoUrl);
@@ -72,5 +75,11 @@ public class AllureAttachments {
         return null;
     }
 
+    public static void browserConsoleLogs( ) {
+        addMessage(
+                "Browser console logs",
+                String.join("\n", Selenide.getWebDriverLogs(BROWSER))
+        );
 
+    }
 }

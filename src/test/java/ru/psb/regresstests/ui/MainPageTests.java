@@ -1,5 +1,6 @@
 package ru.psb.regresstests.ui;
 
+import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
@@ -25,7 +26,7 @@ public class MainPageTests extends TestBase {
     @DisplayName("Opening the main page")
     public void checkMainPageTitleTest() {
         step("Open the main page", () -> {
-            open(mainPageURL);
+            Selenide.open(mainPageURL);
         });
 
         step("Check product title", () -> {
@@ -41,7 +42,7 @@ public class MainPageTests extends TestBase {
     @DisplayName("Checking menu items on the main page")
     public void checkMenuItemsTest() {
         step("Open the main page", () -> {
-            open(mainPageURL);
+            Selenide.open(mainPageURL);
         });
 
         step("Check names of all menu items", () -> {
@@ -59,7 +60,7 @@ public class MainPageTests extends TestBase {
     @DisplayName("Checking Login page is available")
     public void loginPageAvailabilityTest() {
         step("Open the main page", () -> {
-            open(mainPageURL);
+            Selenide.open(mainPageURL);
         });
 
         step("Go to Login page", () -> {
@@ -77,7 +78,7 @@ public class MainPageTests extends TestBase {
     @DisplayName("Verify that Forgot Password page is available")
     public void loginWithEmptyFieldTest() {
         step("Open the main page", () -> {
-            open(mainPageURL);
+            Selenide.open(mainPageURL);
         });
 
         step("Go to Login page", () -> {
@@ -100,7 +101,7 @@ public class MainPageTests extends TestBase {
     @DisplayName("Successful opening Request Demo page")
     public void requestDemoPageTest() {
         step("Open the main page", () -> {
-            open(mainPageURL);
+            Selenide.open(mainPageURL);
         });
 
         step("Go to Request Demo page", () -> {
