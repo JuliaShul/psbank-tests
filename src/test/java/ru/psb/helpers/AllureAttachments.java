@@ -64,9 +64,6 @@ public class AllureAttachments {
             addAttachment("Video", "video/mp4", videoInputStream, "mp4");
         }
     }
-    public static String getSessionId() {
-        return ((RemoteWebDriver) getWebDriver()).getSessionId().toString();
-    }
 
     public static URL getVideoUrl( String sessionId ) {
         String videoUrl = DriverUtils.getVideoUrl() + sessionId + ".mp4";
@@ -77,13 +74,5 @@ public class AllureAttachments {
             e.printStackTrace();
         }
         return null;
-    }
-
-    public static void browserConsoleLogs( ) {
-        addMessage(
-                "Browser console logs",
-                String.join("\n", Selenide.getWebDriverLogs(BROWSER))
-        );
-
     }
 }

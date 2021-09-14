@@ -10,6 +10,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.extension.ExtendWith;
 
+import static com.codeborne.selenide.WebDriverRunner.closeWebDriver;
 import static ru.psb.helpers.DriverUtils.configureDriver;
 
 
@@ -27,9 +28,10 @@ public class TestBase {
         AllureAttachments.attachScreenshot("Last screenshot");
         AllureAttachments.attachPageSource();
         AllureAttachments.addBrowserConsoleLogs();
+        closeWebDriver();
         if (DriverUtils.isVideoOn()) {
             AllureAttachments.attachVideo(sessionId);
         }
-        Selenide.closeWebDriver();
+
     }
 }

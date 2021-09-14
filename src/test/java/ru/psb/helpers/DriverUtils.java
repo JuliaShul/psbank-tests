@@ -22,14 +22,14 @@ public class DriverUtils {
     private static ProjectConfig getDriverConfig() {
         return ConfigFactory.newInstance().create(ProjectConfig.class, System.getProperties());
     }
-
-    public static String getWebMobile() {
-        return getDriverConfig().webBrowserMobileView();
-    }
-
-    public static boolean isWebMobile() {
-        return !getWebMobile().equals("");
-    }
+//
+//    public static String getWebMobile() {
+//        return getDriverConfig().webBrowserMobileView();
+//    }
+//
+//    public static boolean isWebMobile() {
+//        return !getWebMobile().equals("");
+//    }
 
 
     public static String getWebRemoteDriver() {
@@ -67,13 +67,13 @@ public class DriverUtils {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
-        if (isWebMobile()) { // for chrome only
-            ChromeOptions chromeOptions = new ChromeOptions();
-            Map<String, Object> mobileDevice = new HashMap<>();
-            mobileDevice.put("deviceName", getWebMobile());
-            chromeOptions.setExperimentalOption("mobileEmulation", mobileDevice);
-            capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-        }
+//        if (isWebMobile()) { // for chrome only
+//            ChromeOptions chromeOptions = new ChromeOptions();
+//            Map<String, Object> mobileDevice = new HashMap<>();
+//            mobileDevice.put("deviceName", getWebMobile());
+//            chromeOptions.setExperimentalOption("mobileEmulation", mobileDevice);
+//            capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
+//        }
 
         if (isRemoteWebDriver()) {
             capabilities.setCapability("enableVNC", true);
