@@ -1,4 +1,4 @@
-package ru.psb.regresstests.ui;
+package ru.psb.regressTests.ui;
 
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.*;
@@ -7,7 +7,7 @@ import ru.psb.annotations.JiraIssues;
 import ru.psb.annotations.Layer;
 import ru.psb.annotations.Owner;
 import ru.psb.helpers.CommonSteps;
-import ru.psb.obj.SearchFields;
+import ru.psb.pageObject.SearchFields;
 import org.junit.jupiter.api.Test;
 
 @Layer("Web")

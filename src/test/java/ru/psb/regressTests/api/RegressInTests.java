@@ -1,4 +1,4 @@
-package ru.psb.regresstests.api;
+package ru.psb.regressTests.api;
 
 import io.qameta.allure.Story;
 import io.restassured.RestAssured;

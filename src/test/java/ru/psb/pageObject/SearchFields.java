@@ -1,4 +1,4 @@
-package ru.psb.obj;
+package ru.psb.pageObject;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;

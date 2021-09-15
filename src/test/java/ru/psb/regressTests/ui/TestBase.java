@@ -1,4 +1,4 @@
-package ru.psb.regresstests.ui;
+package ru.psb.regressTests.ui;
 
 import ru.psb.helpers.AllureAttachments;
 import ru.psb.helpers.DriverUtils;
