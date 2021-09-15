@@ -73,7 +73,7 @@ IntelliJ IDEA, Java, Gradle, JUnit5, Rest-Assured, Selenide, Jenkins, Selenoid, 
 ![Jenkins](src/test/resources/files/Jenkins.jpg)
 <br><br>
 
-### Run tests with not filled local.properties:
+### Run tests with remote.properties:
 
 ```bash
 gradle clean test -Dbrowser=chrome -DbrowserVersion=91.0 -DbrowserSize=1920x1080 -DbrowserMobileView= -DremoteDriverUrl=https://user1:1234@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/
