@@ -1,4 +1,6 @@
-# Autotests for https://www.psbank.ru/
+The examples of UI, API and Mobile tests:
+# UI tests for https://www.psbank.ru web-site
+# API tests for https://reqres.in web-site
 
 ## Technology Stack
 <a href="https://www.jetbrains.com/idea/">
