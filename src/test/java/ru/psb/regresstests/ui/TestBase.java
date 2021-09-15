@@ -2,7 +2,6 @@ package ru.psb.regresstests.ui;
 
 import ru.psb.helpers.AllureAttachments;
 import ru.psb.helpers.DriverUtils;
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.junit5.AllureJunit5;
 import io.qameta.allure.selenide.AllureSelenide;
