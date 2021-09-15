@@ -1,32 +1,28 @@
 package ru.psb.regresstests.ui;
 
-import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.*;
+import ru.psb.annotations.JiraIssue;
+import ru.psb.annotations.JiraIssues;
+import ru.psb.annotations.Layer;
+import ru.psb.annotations.Owner;
+import ru.psb.helpers.CommonSteps;
 import ru.psb.obj.SearchFields;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Selenide.open;
-import static io.qameta.allure.Allure.step;
-
-//@Layer("Web")
-//@Owner("shulbaeva")
+@Layer("Web")
+@Owner("shulbaeva")
 public class TestsMainPage extends TestBase {
     SearchFields searchFields = new SearchFields();
- //   CommonSteps commonSteps = new CommonSteps();
+    CommonSteps commonSteps = new CommonSteps();
 
-    String mainPageURL = "https://www.psbank.ru/";
-
-   @Story("Positive test for Search Fields on TopBar")
- //   @JiraIssues({@JiraIssue("HOM-231")})
+    @Story("Positive test for Search Fields on TopBar")
+    @JiraIssues({@JiraIssue("HOM-231")})
     @Tags({@Tag("web"), @Tag("regress"), @Tag("UI")})
     @DisplayName("Check the labels on the top panel on the site")
     @Test
     public void checkTopBar() {
-        step("Open the main page", () -> {
-            Selenide.open(mainPageURL);
-        });
-      //  commonSteps.openPage();
+        commonSteps.openPage();
         searchFields.haveText("Офисы");
         searchFields.haveText("Банкоматы");
         searchFields.haveText("Контакты");

@@ -1,27 +1,28 @@
 package ru.psb.regresstests.api;
 
-import io.qameta.allure.Feature;
-import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.*;
+import ru.psb.annotations.JiraIssue;
+import ru.psb.annotations.JiraIssues;
+import ru.psb.annotations.Layer;
+import ru.psb.annotations.Owner;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.http.ContentType.JSON;
 import static org.hamcrest.Matchers.is;
 
-//@Owner("mhilimovich")
-//@Feature("RegresIn site")
+@Layer("Api")
+@Owner("shulbaeva")
 public class RegressInTests {
     @BeforeAll
-    static void setup() {
-        RestAssured.baseURI = "https://reqres.in";
-    }
+    static void setup() { RestAssured.baseURI = "https://reqres.in";}
 
     @Test
     @Story("Get requests")
+    @JiraIssues({@JiraIssue("HOM-231")})
+    @Tag("api")
     @DisplayName("Get a single resource")
-    @Tags({@Tag("web"), @Tag("api")})
     void singleResourceSuccessfulTest() {
         given()
                 .when()
@@ -35,8 +36,9 @@ public class RegressInTests {
 
     @Test
     @Story("Get requests")
+    @JiraIssues({@JiraIssue("HOM-231")})
+    @Tag("api")
     @DisplayName("Get a single resource, negative test")
-    @Tags({@Tag("web"), @Tag("api")})
     void singleResourceFailedTest() {
         given()
                 .when()
@@ -48,8 +50,9 @@ public class RegressInTests {
 
     @Test
     @Story("Post requests")
+    @JiraIssues({@JiraIssue("HOM-231")})
+    @Tag("api")
     @DisplayName("Successful registration test")
-    @Tags({@Tag("web"), @Tag("api")})
     void registrationSuccessfulTest() {
         given()
                 .contentType(JSON)
@@ -66,8 +69,9 @@ public class RegressInTests {
 
     @Test
     @Story("Post requests")
+    @JiraIssues({@JiraIssue("HOM-231")})
+    @Tag("api")
     @DisplayName("Successful login test")
-    @Tags({@Tag("web"), @Tag("api")})
     void loginSuccessfulTest() {
         given()
                 .contentType(JSON)
@@ -83,8 +87,9 @@ public class RegressInTests {
 
     @Test
     @Story("Put requests")
+    @JiraIssues({@JiraIssue("HOM-231")})
+    @Tag("api")
     @DisplayName("Successful update of user data")
-    @Tags({@Tag("web"), @Tag("api")})
     void updateUserSuccessfulTest() {
         given()
                 .contentType(JSON)

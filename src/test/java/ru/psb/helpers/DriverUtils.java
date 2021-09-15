@@ -3,13 +3,9 @@ package ru.psb.helpers;
 import com.codeborne.selenide.Configuration;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.aeonbits.owner.ConfigFactory;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import ru.psb.config.ProjectConfig;
-
-import java.util.HashMap;
-import java.util.Map;
 
 import static com.codeborne.selenide.Selenide.getWebDriverLogs;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
@@ -22,15 +18,6 @@ public class DriverUtils {
     private static ProjectConfig getDriverConfig() {
         return ConfigFactory.newInstance().create(ProjectConfig.class, System.getProperties());
     }
-//
-//    public static String getWebMobile() {
-//        return getDriverConfig().webBrowserMobileView();
-//    }
-//
-//    public static boolean isWebMobile() {
-//        return !getWebMobile().equals("");
-//    }
-
 
     public static String getWebRemoteDriver() {
         return String.format(getDriverConfig().remoteDriverUrl(),
@@ -66,14 +53,6 @@ public class DriverUtils {
         Configuration.browserSize = getDriverConfig().browserSize();
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
-
-//        if (isWebMobile()) { // for chrome only
-//            ChromeOptions chromeOptions = new ChromeOptions();
-//            Map<String, Object> mobileDevice = new HashMap<>();
-//            mobileDevice.put("deviceName", getWebMobile());
-//            chromeOptions.setExperimentalOption("mobileEmulation", mobileDevice);
-//            capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-//        }
 
         if (isRemoteWebDriver()) {
             capabilities.setCapability("enableVNC", true);
