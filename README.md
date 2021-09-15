@@ -13,9 +13,9 @@
 <a href="https://www.jetbrains.com/idea/">
     <img src="https://starchenkov.pro/qa-guru/img/skills/JUnit5.svg" width="40" height="40"  alt="JUnit 5"/>
 </a>
-<a href="https://www.jetbrains.com/idea/">
+<!-- <a href="https://www.jetbrains.com/idea/">
     <img src="https://starchenkov.pro/qa-guru/img/skills/Rest-Assured.svg" width="40" height="40"  alt="ResrAssured"/>
-</a>
+</a> -->
 <a href="https://www.jetbrains.com/idea/">
     <img src="https://starchenkov.pro/qa-guru/img/skills/Selenide.svg" width="40" height="40"  alt="Seleide"/>
 </a>
@@ -38,7 +38,7 @@
     <img src="https://starchenkov.pro/qa-guru/img/skills/Telegram.svg" width="40" height="40"  alt="Telegram"/>
 </a>
 
-IntelliJ IDEA, Java, Gradle, JUnit5, Rest-Assured, Selenide, Jenkins, Selenoid, Github, Allure TestOps, Jira, Telegram (notifications)
+IntelliJ IDEA, Java, Gradle, JUnit5, Selenide, Jenkins, Selenoid, Github, Allure TestOps, Jira, Telegram (notifications)
 <br><br>
 
 ## Checks in projects:
