@@ -20,7 +20,7 @@ public class RegressInTests {
 
     @Test
     @Story("Get requests")
-    @JiraIssues({@JiraIssue("HOM-231")})
+    @JiraIssues({@JiraIssue("HOM-235")})
     @Tag("api")
     @DisplayName("Get a single resource")
     void singleResourceSuccessfulTest() {
@@ -36,7 +36,7 @@ public class RegressInTests {
 
     @Test
     @Story("Get requests")
-    @JiraIssues({@JiraIssue("HOM-231")})
+    @JiraIssues({@JiraIssue("HOM-235")})
     @Tag("api")
     @DisplayName("Get a single resource, negative test")
     void singleResourceFailedTest() {
@@ -50,7 +50,7 @@ public class RegressInTests {
 
     @Test
     @Story("Post requests")
-    @JiraIssues({@JiraIssue("HOM-231")})
+    @JiraIssues({@JiraIssue("HOM-235")})
     @Tag("api")
     @DisplayName("Successful registration test")
     void registrationSuccessfulTest() {
@@ -69,7 +69,7 @@ public class RegressInTests {
 
     @Test
     @Story("Post requests")
-    @JiraIssues({@JiraIssue("HOM-231")})
+    @JiraIssues({@JiraIssue("HOM-235")})
     @Tag("api")
     @DisplayName("Successful login test")
     void loginSuccessfulTest() {
@@ -87,7 +87,7 @@ public class RegressInTests {
 
     @Test
     @Story("Put requests")
-    @JiraIssues({@JiraIssue("HOM-231")})
+    @JiraIssues({@JiraIssue("HOM-235")})
     @Tag("api")
     @DisplayName("Successful update of user data")
     void updateUserSuccessfulTest() {

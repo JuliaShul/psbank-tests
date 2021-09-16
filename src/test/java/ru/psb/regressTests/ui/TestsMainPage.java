@@ -17,7 +17,7 @@ public class TestsMainPage extends TestBase {
     CommonSteps commonSteps = new CommonSteps();
 
     @Story("Positive test for Search Fields on TopBar")
-    @JiraIssues({@JiraIssue("HOM-231")})
+    @JiraIssues({@JiraIssue("HOM-235")})
     @Tags({@Tag("web"), @Tag("regress"), @Tag("UI")})
     @DisplayName("Check the labels on the top panel on the site")
     @Test
