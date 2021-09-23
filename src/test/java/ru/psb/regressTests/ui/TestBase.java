@@ -31,6 +31,5 @@ public class TestBase {
         if (DriverUtils.isVideoOn()) {
             AllureAttachments.attachVideo(sessionId);
         }
-
     }
 }

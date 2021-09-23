@@ -56,8 +56,7 @@ public class RegressInTests {
     void registrationSuccessfulTest() {
         given()
                 .contentType(JSON)
-                .body("{ \"email\": \"eve.holt@reqres.in\", " +
-                        "\"password\": \"pistol\" }")
+                .body("{ \"email\": \"eve.holt@reqres.in\", \"password\": \"pistol\" }")
                 .when()
                 .post("/api/register")
                 .then()
@@ -75,8 +74,7 @@ public class RegressInTests {
     void loginSuccessfulTest() {
         given()
                 .contentType(JSON)
-                .body("{ \"email\": \"eve.holt@reqres.in\", " +
-                        "\"password\": \"cityslicka\" }")
+                .body("{ \"email\": \"eve.holt@reqres.in\", \"password\": \"cityslicka\" }")
                 .when()
                 .post("/api/login")
                 .then()
@@ -93,8 +91,7 @@ public class RegressInTests {
     void updateUserSuccessfulTest() {
         given()
                 .contentType(JSON)
-                .body("{ \"name\": \"morpheus\", " +
-                        "\"job\": \"zion resident\" }")
+                .body("{ \"name\": \"morpheus\", \"job\": \"zion resident\" }")
                 .when()
                 .put("/api/users/2")
                 .then()

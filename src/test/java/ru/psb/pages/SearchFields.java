@@ -1,4 +1,4 @@
-package ru.psb.pageObject;
+package ru.psb.pages;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
@@ -23,6 +23,4 @@ public class SearchFields {
     public void haveTextCategory(int index, String text) {
         CATEGORY_FIELD.find(".sublist-menu__link", index).shouldHave(text(text));
     }
-
-
 }

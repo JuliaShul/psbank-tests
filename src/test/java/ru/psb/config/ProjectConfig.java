@@ -10,10 +10,8 @@ import org.aeonbits.owner.Config;
 })
 public interface ProjectConfig extends Config {
 
-    @Key("browser")
     String browser();
 
-    @Key("browserVersion")
     String browserVersion();
 
     @Key("browserSize")
@@ -25,12 +23,9 @@ public interface ProjectConfig extends Config {
     @Key("videoStorage")
     String videoStorage();
 
-    @Key("browserMobileView")
-    String webBrowserMobileView();
-
-    @Key("web.remote.driver.user")
+    @Key("webRemoteDriverUser")
     String webRemoteDriverUser();
 
-    @Key("web.remote.driver.password")
+    @Key("webRemoteDriverPassword")
     String webRemoteDriverPassword();
 }
