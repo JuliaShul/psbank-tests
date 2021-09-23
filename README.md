@@ -72,7 +72,7 @@ IntelliJ IDEA, Java, Gradle, JUnit5, Selenide, Jenkins, Selenoid, Github, Allure
 * REMOTE_DRIVER_URL (url address from selenoid or grid. default selenoid.autotests.cloud)
 * ALLURE_NOTIFICATIONS_VERSION (default 3.1.1)
 
-![Jenkins](src/test/resources/files/Jenkins.jpg)
+![Jenkins](screenshots/Jenkins.jpg)
 <br><br>
 
 ### Run tests with remote.properties:
