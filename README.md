@@ -93,6 +93,8 @@ allure serve build/allure-results
 ### Analysis of results in Jenkins via Allure Reports
 ![Allure_MainDashboard](screenshots/Allure_dashboards1.png)
 <br><br>
+### List of tests in Allure TestOps
+![alt "Allure TestOps"](screenshots/Allure_TestOps.png "Allure TestOps") -->
 
 <!-- ## Analysis of results in Allure TestOps <a href="https://qameta.io/"><img src="https://starchenkov.pro/qa-guru/img/skills/Allure_EE.svg" width="40" height="40"></a>
 ![alt "Allure TestOps"](screenshots/allure1.png "Allure TestOps") -->
