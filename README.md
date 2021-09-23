@@ -88,18 +88,18 @@ allure serve build/allure-results
 
 ## Test Management system was used Allure 
 <!-- ### List of tests in Allure TestOps
-![alt "Allure TestOps"](src/test/resources/files/ListOfTestsInAllureTestOps.png "Allure TestOps") -->
+![alt "Allure TestOps"](screenshots/ListOfTestsInAllureTestOps.png "Allure TestOps") -->
 
 ### Analysis of results in Jenkins via Allure Reports
-![Allure_MainDashboard](src/test/resources/files/Allure_dashboards1.png)
+![Allure_MainDashboard](screenshots/Allure_dashboards1.png)
 <br><br>
 
 <!-- ## Analysis of results in Allure TestOps <a href="https://qameta.io/"><img src="https://starchenkov.pro/qa-guru/img/skills/Allure_EE.svg" width="40" height="40"></a>
-![alt "Allure TestOps"](src/test/resources/files/images/allure1.png "Allure TestOps") -->
+![alt "Allure TestOps"](screenshots/allure1.png "Allure TestOps") -->
 
 ## Notification of test results via a bot on Telegram <a href="https://telegram.org/"> <img src="https://starchenkov.pro/qa-guru/img/skills/Telegram.svg" width="40" height="40"></a>
-![Allure_Telega](src/test/resources/files/Notifications.png)
+![Allure_Telega](screenshots/Notifications.png)
 
 ## Video of the test run, taken from the Selenoid runtime environment <a href="https://aerokube.com/selenoid/"><img src="https://starchenkov.pro/qa-guru/img/skills/Telegram.svg" width="40" height="40"></a>
-![Selenoid](src/test/resources/files/test_run.gif)
+![Selenoid](screenshots/test_run.gif)
 <br><br>
